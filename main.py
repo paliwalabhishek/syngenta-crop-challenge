@@ -175,7 +175,7 @@ print('----------------Result from 2nd  Neural Network------------------------')
 X_Test = torch.Tensor(x_val).cuda(device)
 Y_Test = torch.Tensor(y_val).cuda(device)
 net = net.eval()
-acc, pred = accuracy(net, x_val, y_val, 0.15)
+acc, pred = accuracy(net, x_val, y_val, 0.10)
 print("Overall Accuracy := %0.2f%%" % acc)
 print(pred)
 '''
